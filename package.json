@@ -7,7 +7,8 @@
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
-    "start": "grunt serve"
+    "start": "grunt serve",
+    "build-sass": "node-sass --include-path css/theme/source css/theme/source/qdelft.scss css/theme/qdelft.css"
   },
   "author": {
     "name": "Hakim El Hattab",
