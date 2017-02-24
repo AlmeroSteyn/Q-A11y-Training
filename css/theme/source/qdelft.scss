@@ -3,31 +3,34 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-
-
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
 
-
+// Theme specific colors
+$QGreen: #8DC63F;
+$QGreenLightBackground: #9FC16C;
+$QBackGround: #363F44;
+$OffWhite: #f7fbfc;
+$SlateText: #333;
+//
 
 // Include theme-specific fonts
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
-
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Open Sans', sans-serif;
-$mainColor: #333;
+$mainColor: $SlateText;
 $headingFont: 'Quicksand', sans-serif;
-$headingColor: #333;
+$headingColor: $SlateText;
 $headingLetterSpacing: -0.08em;
 $headingTextShadow: none;
-$backgroundColor: #f7fbfc;
-$linkColor: #3b759e;
-$linkColorHover: lighten( $linkColor, 20% );
-$selectionBackgroundColor: #134674;
+$backgroundColor: $OffWhite;
+$linkColor: $QGreen;
+$linkColorHover: lighten($linkColor, 20%);
+$selectionBackgroundColor: $QBackGround;
 
 // Fix links so they are not cut off
 .reveal a {
@@ -36,10 +39,8 @@ $selectionBackgroundColor: #134674;
 
 // Background generator
 @mixin bodyBackground() {
-  @include vertical-gradient( #9FC16C, #f7fbfc );
+  @include vertical-gradient($QGreenLightBackground, $OffWhite);
 }
-
-
 
 // Theme template ------------------------------
 @import "../template/theme";
@@ -47,11 +48,28 @@ $selectionBackgroundColor: #134674;
 
 //Custom styles
 
-.logo {
-  margin: 10em;
+.reveal {
+
+  section {
+
+    img {
+      hr {
+        height: 2px;
+        background: $QGreen;
+      }
+
+      &.q-image {
+        margin: 0;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+      }
+
+    }
+
+  }
+
 }
 
-hr {
-  height: 2px;
-  background: #8DC63F;
-}
+
+

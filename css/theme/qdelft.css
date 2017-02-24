@@ -29,12 +29,12 @@ body {
 
 ::selection {
   color: #fff;
-  background: #134674;
+  background: #363F44;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #134674;
+  background: #363F44;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -217,20 +217,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #3b759e;
+  color: #8DC63F;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #74a7cb;
+  color: #bcdd8e;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #264c66; }
+  background: #648e2a; }
 
 /*********************************************
  * IMAGES
@@ -252,7 +252,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #3b759e;
+  border-color: #8DC63F;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -260,31 +260,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #3b759e; }
+  border-right-color: #8DC63F; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #3b759e; }
+  border-left-color: #8DC63F; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #3b759e; }
+  border-bottom-color: #8DC63F; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #3b759e; }
+  border-top-color: #8DC63F; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #74a7cb; }
+  border-right-color: #bcdd8e; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #74a7cb; }
+  border-left-color: #bcdd8e; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #74a7cb; }
+  border-bottom-color: #bcdd8e; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #74a7cb; }
+  border-top-color: #bcdd8e; }
 
 /*********************************************
  * PROGRESS BAR
@@ -293,14 +293,17 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #3b759e;
+  background: #8DC63F;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
-.logo {
-  margin: 10em; }
-
-hr {
+.reveal section img hr {
   height: 2px;
   background: #8DC63F; }
+
+.reveal section img.q-image {
+  margin: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none; }
