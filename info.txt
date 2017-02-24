@@ -4,6 +4,15 @@ Why do we make websites?
 - To market our brand
 - To provide services
 - We should not end up making websites only for ourselves
+- To give people freedom
+
+Maybe have a look at a video of someone navigating with AT
+https://www.youtube.com/watch?v=kziXJX6a7E4
+https://www.youtube.com/watch?v=VIRx3RJzbZg - very good aside from the last canadian bit
+https://www.youtube.com/watch?v=sUnpmy8K17U Dutch video about UN
+https://www.youtube.com/watch?v=uB5IMGgO58o&list=PL691CFED9266E3EBC - paper prototyping
+
+Investigate further what is the current state in Netherlands
 
 We are potentially exluding a very large amount of people
  <p><i>One in six people in the European Union (EU) has a disability
@@ -19,9 +28,21 @@ Where did we go wrong
 Websites are not statically printed pages
 Websites are not desktop applications
 Designing for the average user
-Disabled people would not want to use this application
+Disabled people would not want to use this application (making assumptions about a very large group of people).
 It is only an internal application
 Making accessible websites costs too much (MVP)
+HTML has a specification it is not freeform
+We tend to think that accessibility is only about people with extreme disabilities
+
+Why do we not hear more complaints from disabled poeple around the websites we build?
+- People ask trusted friends/family for help
+- Admitting not being able to do something can be embarassing
+- Callcentres and help forms are in themselves not guaranteed to be accessible
+- Finding ways around is easier than admitting disability
+- Non essential tasks are not completed
+- People go to competitors instead if they do offer accessible options
+- Our websites get used by only the people we allow them to be used by
+- Actual complaints based on law leads can lead to lawsuits.
 
 Avoid designing for the average user:
 The average user is created from the combination of all users. What
