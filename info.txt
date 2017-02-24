@@ -1,0 +1,100 @@
+Reasons for a11y
+
+Reasons why websites are not accessible
+
+Where did we go wrong
+Websites are not statically printed pages
+Websites are not desktop applications
+
+Inclusive interfaces are robust interfaces. Working for everyone
+
+Button example:
+Graphically designed image button vs elaborate html custom button vs button element
+Image button cannot scale well, does not display when images are not displayed and does not provide its text accessibly
+
+
+There are 140,737,479,966,720 combinations of hexcodes. Obviously
+not all of them are accessible. If only 1% of all color combinations
+are accessible then there are still almost 141 million combinations to
+choose from. This seems more than adequate to paint any bikeshed
+you will come across for the rest of your career.”
+— “The Veil Of Ignorance”, Adam Morse3
+
+Important to realize that the entire browser is an interface
+
+Lang attribute - Even allows browsers to expose spellcheck
+
+Allow responsiveness, resize and pinch to zoom
+
+<!-- don’t use this -->
+<meta name="viewport" content="width=device-width, initialscale=
+1.0, minimum-scale=1.0, maximum-scale=1.0,
+user-scalable=no">
+<!-- use this -->
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+
+As a rule of thumb, avoid using positioned
+elements, especially with position: fixed. When content is
+enlarged, any elements stuck to a certain part of the screen
+are liable to become blind spots.
+
+html {
+font-size: 100%;
+}
+In the example above, 100% is equal to 16px if the user has
+not adjusted the font size manually, either in their operating
+system or browser settings (e.g. under Preferences → Content
+in Firefox
+
+It is true that a greater number of users will operate fullpage
+zoom using Cmd (or Ctrl) and +, but modern browsers
+and operating systems still support text-only resizing, and
+so should you. To make sure font-size, padding and margin
+all resize proportionately, each should be set using the relative
+units rem or em.
+
+Look at progressive enhancement (take care of webfonts and use fallbacks)
+
+Take care of your page title. The name should be clearn and change when you navigate. Use a pattern like "Site name| Authored by"
+
+Use semantic HTML and skiplinks
+Give a correct heading structure (do not skip levels)
+Provide clean link labels
+landmark nav and navigation regions (refer to heydons book p127)
+
+
+Avoid designing for the average user:
+The average user is created from the combination of all users. What
+we get is, in fact, a completely different user. None of our users is
+like the average user. Therefore, when designing for that artificial
+individual we create something that doesn’t fit anyone’s needs.
+— “Designing for the extremes,” Susana Gonzalez Ruiz
+
+The paragraph:
+Select a readable typeface and not one that is prone to be hard to read. Think of dyslexia
+Avoid overly long text lines (around 45 -70 characters)
+Avoid text-align: justify; Even though it may look neater it is less readable due to eneven spacing
+Avoid too low and too high contrast (Sufferers of scotopic
+sensitivity syndrome27 (or Irlen syndrome) are sensitive
+to glare, and stark contrast can result in blurred text or
+text that appears to move around.)
+Undelines for links (look at options not bisecting descenders)
+Indicate focus
+Identify external links
+
+Then: • Write short paragraphs, sentences and words.
+“I purchased a mammalian companion of the canine
+variety” is never better than “I bought a dog.”
+33 http://alistapart.com/blog/post/content-first-design
+A Paragraph 67
+• Be wary of passive sentences.34 They can often be
+replaced by a more direct alternative. There’s no need
+to say the convoluted, “a pork pie was eaten by Harry”
+when you can just as well say, “Harry ate a pork pie.”
+• Eliminate redundancy. It’s rarely worth saying the same
+thing twice in different ways. Avoid repetition. (See
+what I did there?)
+• Vary the length of sentences and paragraphs.
+
+
