@@ -316,6 +316,11 @@ body {
   .reveal section.q-main-slide h2 {
     color: #f7fbfc; }
 
+.reveal section.q-section-slide {
+  font-weight: bold; }
+  .reveal section.q-section-slide h2 {
+    font-weight: bold; }
+
 .reveal section img.q-image {
   margin: 0;
   background: transparent;
@@ -324,6 +329,12 @@ body {
 
 .reveal section img.q-main-logo {
   max-width: 50%; }
+
+.reveal section img.q-sub-logo {
+  max-width: 10%; }
+
+.reveal section img.q-main-logo-pad {
+  margin-bottom: 1em; }
 
 .reveal section ul.q-address {
   list-style: none;

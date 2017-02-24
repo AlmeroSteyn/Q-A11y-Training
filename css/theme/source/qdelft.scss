@@ -78,6 +78,14 @@ $selectionBackgroundColor: $QBackGround;
       color: $OffWhite;
     }
 
+    &.q-section-slide {
+      font-weight: bold;
+
+      h2 {
+        font-weight: bold;
+      }
+    }
+
     img {
 
       &.q-image {
@@ -89,6 +97,14 @@ $selectionBackgroundColor: $QBackGround;
 
       &.q-main-logo {
         max-width: 50%;
+      }
+
+      &.q-sub-logo {
+        max-width: 10%;
+      }
+
+      &.q-main-logo-pad {
+        margin-bottom: 1em;
       }
 
     }
