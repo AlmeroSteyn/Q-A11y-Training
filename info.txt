@@ -1,10 +1,46 @@
-Reasons for a11y
+Reasons for a11y.
+Why do we make websites?
+- So that users can accomplish something
+- To market our brand
+- To provide services
+- We should not end up making websites only for ourselves
 
-Reasons why websites are not accessible
+We are potentially exluding a very large amount of people
+ <p><i>One in six people in the European Union (EU) has a disability
+                    that ranges from mild to severe making around 80 million who are often prevented from taking part
+                    fully in society
+                    and the economy because of environmental and attitudinal barriers. For people with
+                    disabilities the rate of poverty is 70% higher than the average partly due to limited access to
+                    employment.</i> - European Commission</p>
+                <p style="font-size:27px;"><a href="http://bit.ly/1LdRaml">http://bit.ly/1LdRaml</a></p>
 
+Reasons why websites are not accessible +
 Where did we go wrong
 Websites are not statically printed pages
 Websites are not desktop applications
+Designing for the average user
+Disabled people would not want to use this application
+It is only an internal application
+Making accessible websites costs too much (MVP)
+
+Avoid designing for the average user:
+The average user is created from the combination of all users. What
+we get is, in fact, a completely different user. None of our users is
+like the average user. Therefore, when designing for that artificial
+individual we create something that doesn’t fit anyone’s needs.
+— “Designing for the extremes,” Susana Gonzalez Ruiz
+
+Targeting a so-called average user is a disastrous interface
+design strategy, because average users do not exist — except
+for the handful of people teetering on the apex of your bell
+curve. The popular utensil firm OXO knows this well and by
+catering to extreme situations and disabilities first, they’ve
+produced highly ergonomic products with mainstream
+appeal. In OXOs own words:133
+When all users’ needs are taken into consideration in the initial
+design process, the result is a product that can be used by the
+broadest spectrum of users.”
+
 
 Inclusive interfaces are robust interfaces. Working for everyone
 
@@ -67,12 +103,6 @@ Avoid moving something with CSS when it should not be that place in the focus or
 bottom and moving it up with CSS
 
 
-Avoid designing for the average user:
-The average user is created from the combination of all users. What
-we get is, in fact, a completely different user. None of our users is
-like the average user. Therefore, when designing for that artificial
-individual we create something that doesn’t fit anyone’s needs.
-— “Designing for the extremes,” Susana Gonzalez Ruiz
 
 The paragraph:
 Select a readable typeface and not one that is prone to be hard to read. Think of dyslexia
@@ -125,16 +155,6 @@ it’s clearly only an analogy of the real app, so feedback
 about aesthetic particulars is kept to a minimum. Focus
 remains on whether the idea solves the problem well.
 
-Targeting a so-called average user is a disastrous interface
-design strategy, because average users do not exist — except
-for the handful of people teetering on the apex of your bell
-curve. The popular utensil firm OXO knows this well and by
-catering to extreme situations and disabilities first, they’ve
-produced highly ergonomic products with mainstream
-appeal. In OXOs own words:133
-When all users’ needs are taken into consideration in the initial
-design process, the result is a product that can be used by the
-broadest spectrum of users.”
 
 Everybody is a keyboard user when eating with their mouse hand.”
 — Adrian Roselli134
