@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Inclusive design: The design phase</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/qdelft.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <!--Main slide example-->
+        <section class="q-main-slide" data-background-color="#363F44">
+            <img class="q-image q-main-logo q-main-logo-pad" src="./images/QLogoInverted.png"/>
+            <h2>Inclusive Design</h2>
+            <hr/>
+            <p>
+                <span>Building accessible web applications</span>
+            </p>
+            <div class="q-box q-col-50">
+                <ul class="q-address">
+                    <li>Q Delft B.V.</li>
+                    <li>Mijnbouwplein 33</li>
+                    <li>2628 RT Delft</li>
+                    <li>+31 15 30 30 130</li>
+                    <li><a href="www.qdelft.nl">www.qdelft.nl</a></li>
+                </ul>
+            </div>
+            <div class="q-box q-col-50 q-col-50-right">
+                <ul class="q-address">
+                    <li>Almero Steyn</li>
+                    <li>Twitter: @KryptosRSA</li>
+                    <li><a href="mailto:almero.steyn@qdelft.nl">almero.steyn@qdelft.nl</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="q-section-slide" data-background-color="#8DC63F">
+            <h2>Some title</h2>
+        </section>
+        <section data-background-image="./images/QLogoQOnlyPadded.png" data-background-size="100px"
+                 data-background-position="bottom left">
+            <p>Some normal slide</p>
+        </section>
+        <section class="q-main-slide " data-background-color="#363F44">
+            <h2>Questions?</h2>
+            <img class="q-image q-sub-logo" src="./images/QLogoQOnly.png"/>
+            <div class="q-box q-col-50">
+                <ul class="q-address">
+                    <li>Q Delft B.V.</li>
+                    <li>Mijnbouwplein 33</li>
+                    <li>2628 RT Delft</li>
+                    <li>+31 15 30 30 130</li>
+                    <li><a href="www.qdelft.nl">www.qdelft.nl</a></li>
+                </ul>
+            </div>
+            <div class="q-box q-col-50 q-col-50-right">
+                <ul class="q-address">
+                    <li>Almero Steyn</li>
+                    <li>Twitter: @KryptosRSA</li>
+                    <li><a href="mailto:almero.steyn@qdelft.nl">almero.steyn@qdelft.nl</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+        transition: 'convex',
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
