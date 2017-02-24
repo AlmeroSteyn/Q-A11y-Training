@@ -63,6 +63,9 @@ Give a correct heading structure (do not skip levels)
 Provide clean link labels
 landmark nav and navigation regions (refer to heydons book p127)
 
+Avoid moving something with CSS when it should not be that place in the focus order. Like putting the navigation at the
+bottom and moving it up with CSS
+
 
 Avoid designing for the average user:
 The average user is created from the combination of all users. What
@@ -96,5 +99,97 @@ when you can just as well say, “Harry ate a pork pie.”
 thing twice in different ways. Avoid repetition. (See
 what I did there?)
 • Vary the length of sentences and paragraphs.
+
+Leave creativity to the bad designers. This is not the place to do
+something different. If a convention exists, use it.”
+— Mark Boulton, “Icons, Symbols and a semiotic Web”101
+
+Look at page 158 heydons book
+
+Here is a little revelation. People are not really into using products.
+Any time spent by a user operating an interface, twisting knobs,
+pulling levers or tapping buttons is time wasted. Rather, people are
+more interested in the end result and in obtaining that result
+in the quickest, least intrusive and most efficient manner possible.”
+— Goran Peuc “Nobody Wants To Use Your Product” 123
+
+Inclusive prototyping
+Paper prototyping?
+Benefits and bad points of fully functional prototypes
+It’s not polished. The trouble with high-fidelity
+mockups and prototypes is that they tend to look
+finished. People are polite and you won’t get honest
+feedback about something that looks like it’s had a lot
+of work put into it. That it’s made of paper at all means
+it’s clearly only an analogy of the real app, so feedback
+about aesthetic particulars is kept to a minimum. Focus
+remains on whether the idea solves the problem well.
+
+Targeting a so-called average user is a disastrous interface
+design strategy, because average users do not exist — except
+for the handful of people teetering on the apex of your bell
+curve. The popular utensil firm OXO knows this well and by
+catering to extreme situations and disabilities first, they’ve
+produced highly ergonomic products with mainstream
+appeal. In OXOs own words:133
+When all users’ needs are taken into consideration in the initial
+design process, the result is a product that can be used by the
+broadest spectrum of users.”
+
+Everybody is a keyboard user when eating with their mouse hand.”
+— Adrian Roselli134
+
+When inclusion is integrated into the design process in
+this way, it’s very little more work. In fact, using standard
+technologies in expected ways often means less work. For
+example, devising an inaccessible, custom-authored <div
+class="heading-3"> is actually more typing than using a
+standard <h3>. It gets even more verbose when you’re wedded
+to using a <div> and have to fix the heading accessibility
+after the fact with ARIA attributes:
+
+Giving users choice is the first of
+Henny Swan’s135 accessible UX principles, as developed at
+the BBC:
+1. Give users choice.
+2. Put users in control.
+3. Design with familiarity in mind.
+4. Prioritize features that add value.
+
+As “A Web For Everyone”138 implores:
+Present things that are the same in the same way. One way to
+help users find their way around a site is to be consistent in how
+elements of the site are presented and labeled, which doesn’t mean
+that the site must be boring with no variation or texture.”
+
+Look at search engine result pages p216 Heydon's book
+
+AVOID INFINITE SCROLL
+Instead use a load more button
+
+Do not make assumptions about how users use your forms. Like if you have a login form do not hide the signup option
+right at the bottom. This could force some users to traverse a lot of information when they have to use this
+
+Do NOT use placeholder as a labeling technique
+
+Bearing in mind that <fieldset>s are pointless without
+<legend>s, you can use the following three rules of thumb
+to decide if a <fieldset> is appropriate.
+1. Is there more than one distinct set of fields in total, in
+the same form or context? Yes? Use <fieldset>s. No?
+Don’t use <fieldset>s.
+2. Does a set actually only have one field in it? Yes? You
+don’t need a <fieldset>. No? Use a <fieldset> if (1)
+applies.
+3. Can you think of a <legend> that would make sense
+or aid comprehension if used with each of the
+<fieldset>’s field labels? Yes? Use a <fieldset>.
+No? Don’t use a <fieldset>.
+
+Look out when using * to denote required fields so that screen readers do not read 'asterisk'
+
+Give users an option to display an entered password
+
+Use CSS to display badly written markup
 
 
