@@ -12,20 +12,20 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #9FC16C;
-  background: -moz-linear-gradient(top, #9FC16C 0%, #f7fbfc 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9FC16C), color-stop(100%, #f7fbfc));
-  background: -webkit-linear-gradient(top, #9FC16C 0%, #f7fbfc 100%);
-  background: -o-linear-gradient(top, #9FC16C 0%, #f7fbfc 100%);
-  background: -ms-linear-gradient(top, #9FC16C 0%, #f7fbfc 100%);
-  background: linear-gradient(top, #9FC16C 0%, #f7fbfc 100%);
+  background: #afc18f;
+  background: -moz-linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #afc18f), color-stop(100%, #f7fbfc));
+  background: -webkit-linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
+  background: -o-linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
+  background: -ms-linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
+  background: linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
   background-color: #f7fbfc; }
 
 .reveal {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 40px;
   font-weight: normal;
-  color: #333; }
+  color: #212121; }
 
 ::selection {
   color: #fff;
@@ -52,8 +52,8 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #333;
-  font-family: "Quicksand", sans-serif;
+  color: #212121;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: -0.08em;
@@ -238,7 +238,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #333;
+  border: 4px solid #212121;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
@@ -300,16 +300,51 @@ body {
 
 .reveal section .q-box {
   position: absolute; }
+  .reveal section .q-box img {
+    width: 78%; }
 
 .reveal section .q-col-50 {
-  width: 50%; }
+  width: 50%;
+  text-align: left; }
+  .reveal section .q-col-50 ul {
+    margin: 0; }
+  .reveal section .q-col-50 li {
+    text-align: left; }
 
 .reveal section .q-col-50-right {
-  left: 50%; }
+  left: 50%;
+  text-align: right; }
+  .reveal section .q-col-50-right li {
+    text-align: right; }
+
+.reveal section .q-col-33 {
+  width: 33.33%; }
+
+.reveal section .q-col-33-middle {
+  left: 33.33%; }
+
+.reveal section .q-col-33-right {
+  left: 66.66%; }
 
 .reveal section hr {
   height: 2px;
   background: #8DC63F; }
+
+.reveal section h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: normal; }
+
+.reveal section a {
+  color: blue; }
+  .reveal section a:hover {
+    color: darkblue; }
+
+.reveal section img {
+  background-color: #f7fbfc;
+  border-radius: 25px;
+  padding: 10px;
+  border-width: 2px; }
 
 .reveal section.q-main-slide {
   color: #f7fbfc; }
@@ -328,13 +363,10 @@ body {
   box-shadow: none; }
 
 .reveal section img.q-main-logo {
-  max-width: 50%; }
+  max-width: 40%; }
 
 .reveal section img.q-sub-logo {
   max-width: 10%; }
-
-.reveal section img.q-main-logo-pad {
-  margin-bottom: 1em; }
 
 .reveal section ul.q-address {
   list-style: none;

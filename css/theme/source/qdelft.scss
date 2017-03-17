@@ -10,10 +10,10 @@
 
 // Theme specific colors
 $QGreen: #8DC63F;
-$QGreenLightBackground: #9FC16C;
+$QGreenLightBackground: #afc18f;
 $QBackGround: #363F44;
 $OffWhite: #f7fbfc;
-$SlateText: #333;
+$SlateText: #212121;
 //
 
 // Include theme-specific fonts
@@ -21,9 +21,9 @@ $SlateText: #333;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Open Sans', sans-serif;
+$mainFont: 'Proxima Nova', sans-serif;
 $mainColor: $SlateText;
-$headingFont: 'Quicksand', sans-serif;
+$headingFont: 'Proxima Nova', sans-serif;
 $headingColor: $SlateText;
 $headingLetterSpacing: -0.08em;
 $headingTextShadow: none;
@@ -54,19 +54,70 @@ $selectionBackgroundColor: $QBackGround;
 
     .q-box {
       position: absolute;
+
+      img {
+        width: 78%;
+      }
     }
 
     .q-col-50 {
-      width: 50%
+      width: 50%;
+      text-align: left;
+
+      ul {
+        margin: 0;
+      }
+
+      li {
+        text-align: left;
+      }
     }
 
     .q-col-50-right {
-      left: 50%
+      left: 50%;
+      text-align: right;
+
+      li {
+        text-align: right;
+      }
+    }
+
+    .q-col-33 {
+      width: 33.33%;
+    }
+
+    .q-col-33-middle {
+      left: 33.33%;
+    }
+
+    .q-col-33-right {
+      left: 66.66%
     }
 
     hr {
       height: 2px;
       background: $QGreen;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: normal;
+    }
+
+    a {
+      color: blue;
+
+      &:hover {
+        color: darkblue;
+      }
+    }
+
+    img {
+      background-color: $OffWhite;
+      border-radius: 25px;
+      padding: 10px;
+      border-width: 2px;
     }
 
     &.q-main-slide {
@@ -96,16 +147,16 @@ $selectionBackgroundColor: $QBackGround;
       }
 
       &.q-main-logo {
-        max-width: 50%;
+        max-width: 40%;
       }
 
       &.q-sub-logo {
         max-width: 10%;
       }
 
-      &.q-main-logo-pad {
-        margin-bottom: 1em;
-      }
+      //&.q-main-logo-pad {
+      //  margin-bottom: 1em;
+      //}
 
     }
 
