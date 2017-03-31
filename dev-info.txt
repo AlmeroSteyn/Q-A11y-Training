@@ -6,53 +6,54 @@ The developer's responsibility in Accessibility
 Semantic HTML
     First rule of ARIA
     Brief look at commonly used HTML elements and what they mean
-    <div>
-    <html>
-    <body>
-    <head>
-    <h1>-<h6>
-    <input>
-    <label>
-    <i>
-    <ul>
-    <ol>
-    <li>
-    <a>
-    <dl>
-    <dd>
-    <dt>
-    <p>
-    <span>
-    <pre>
-    <select>
-    <option>
-    <table>
-    <thead>
-    <tbody>
-    <tr>
-    <th>
-    <td>
-    <textarea>
-    <form>
-    <button>
-    <title>
-    <fieldset>
-    <legend>
-    <strong>
-    Semantic elements in HTML5
-        <article>
-        <aside>
-        <details>
-        <figcaption>
-        <figure>
-        <footer>
-        <header>
-        <main>
-        <mark>
-        <nav>
-        <section>
-        <summary>
-        <time>
+        <div>
+        <html>
+        <body>
+        <head>
+        <h1>-<h6>
+        <input>
+        <label>
+        <i> italic and used for icons
+        <ul>
+        <ol>
+        <li>
+        <a>
+        <dl>
+        <dd>
+        <dt>
+        <p>
+        <span>
+        <pre>
+        <select>
+        <option>
+        <table>
+        <thead>
+        <tbody>
+        <tr>
+        <th>
+        <td>
+        <textarea>
+        <form>
+        <button>
+        <title>
+        <fieldset>
+        <legend>
+        <strong>
+        <b>
+        Semantic elements in HTML5 and why we use them
+            <article>
+            <aside>
+            <details>
+            <figcaption>
+            <figure>
+            <footer>
+            <header>
+            <main>
+            <mark>
+            <nav>
+            <section>
+            <summary>
+            <time>
 
 The extra challenges that comes from using a Javascript framework
     Javascript rendering vs static/server generated HTML
@@ -66,8 +67,8 @@ Developer techniques + helper tooling
         What is ARIA and when does it exist
         The rules of ARIA
         When to use ARIA
-        What are the common roles
-        What are the common ARIA states and properties
+        What are the common roles (still to be selected)
+        What are the common ARIA states and properties (still to be selected)
     Responsive websites: Changing viewports and resizing the website
         Responsive design and why it is needed.
         Example Bootstrap CSS
@@ -76,6 +77,7 @@ Developer techniques + helper tooling
         Chrome accessibility inspector
         EDGE accessibility inspector
     Visually hidden elements and why they are useful
+    Hidden and disabled elements
     Accessible labelling
         Implicit labelling
         Explicit labelling
@@ -103,7 +105,7 @@ Developer techniques + helper tooling
         Thinking about focus flow in your application and how to achieve it in HTML
         Programmatically controlling focus
     Contrast
-        Calculate a conrast rich colour palette
+        Calculate a contrast rich colour palette
     Clear page titles
         Setting the HTML page title in your HTML
     Page language
@@ -125,7 +127,7 @@ Developer techniques + helper tooling
     Screen readers
         NVDA
         JAWS
-        VoiceOver (where to get a mac)
+        VoiceOver (where to get a mac?)
 
 Workshop
     Use techniques explained to create a small accessible application in the framework/tech of your choice
@@ -133,16 +135,16 @@ Workshop
 
 Advanced developer techniques
     ARIA live regions
-    Advanced ARIA states and properties
+    Advanced ARIA states and properties (still to be selected)
     Building advanced accessible widgets
         Navigation list
         Toggle button
         Tab control
-        Collapse
+        Collapsible items
         Modals and popups
         Page navigation
-        Date picker?
+        Date picker
 
 Workshop
-    Select (or randomly pick) a widget type to build. Basic skeletons to be provided that can be used
+    Select (or randomly pick) a widget type to build. Basic skeletons will be provided
 
