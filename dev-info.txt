@@ -89,6 +89,7 @@ Developer techniques + helper tooling
         When to use tables
         How to build a proper HTML table
         How to label table columns
+        Making row clicks accessible
     Accessible descriptive text such as errors and input masks
         Using ARIA-describedby
     Buttons vs links
@@ -136,7 +137,7 @@ Workshop
 Advanced developer techniques
     ARIA live regions
     Advanced ARIA states and properties (still to be selected)
-    Building advanced accessible widgets
+    Building advanced accessible widgets (it may still become a subset if this)
         Navigation list
         Toggle button
         Tab control
@@ -144,6 +145,9 @@ Advanced developer techniques
         Modals and popups
         Page navigation
         Date picker
+        Spinners
+        Progress bars
+        File upload
 
 Workshop
     Select (or randomly pick) a widget type to build. Basic skeletons will be provided
