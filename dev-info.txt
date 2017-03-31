@@ -6,24 +6,43 @@ The developer's responsibility in Accessibility
 Semantic HTML
 
 The extra challenges that comes from using a Javascript framework
-    Angular
-    React
 
 Developer techniques + helper tooling
+    Responsive websites: Changing viewports and resizing the website
     Accessibility inspectors and the accessibility tree
     Accessible labelling
+    Accessible descriptive text such as errors and input masks
     Visually hidden elements
+    Buttons vs links
     Skiplinks
-    Focus and focus control
+    Focus, focus flow and focus control
     ARIA roles, states and properties
+    Contrast
+    Clear page titles
+    Page language
     A11y linter plugins
     WAVE
-    aXe
+    aXe + react-axe
+    Colour contrast visualisers
+    Visual disability simulators
     Screen readers
 
 Workshop
+    Use techniques explained to create a small accessible application in the framework/tech of your choice
+    Use techniques explained to find and fix accessibility errors in a simple website
 
 Advanced developer techniques
+    ARIA live regions
+    Advanced ARIA states and properties
+    Building advanced accessible widgets
+        Navigation list
+        Toggle button
+        Tab control
+        Collapse
+        Modals and popups
+        Page navigation
+        Date picker?
 
 Workshop
+    Select (or randomly pick) a widget type to build. Basic skeletons to be provided that can be used
 
