@@ -61,26 +61,71 @@ The extra challenges that comes from using a Javascript framework
     Component composition in a semantic website vs re-use: Balance of complexity
 
 Developer techniques + helper tooling
+    (All techniques will be explained starting from HTML and working back to achieving it in a JavascriptFramework like React)
     ARIA roles, states and properties + Rules of ARIA
+        What is ARIA and when does it exist
+        The rules of ARIA
+        When to use ARIA
+        What are the common roles
+        What are the common ARIA states and properties
     Responsive websites: Changing viewports and resizing the website
-    Accessibility inspectors and the accessibility tree
+        Responsive design and why it is needed.
+        Example Bootstrap CSS
+    Accessibility element inspectors and the accessibility tree
+        Explain what the accessibility tree is
+        Chrome accessibility inspector
+        EDGE accessibility inspector
+    Visually hidden elements and why they are useful
     Accessible labelling
+        Implicit labelling
+        Explicit labelling
+        Labelling with ARIA
+        Labelling with visually hidden elements
     Accessible read-only pages
+        Connecting visual key-value pairs accessibly with <dl>
     Accessible tables
+        When to use tables
+        How to build a proper HTML table
+        How to label table columns
     Accessible descriptive text such as errors and input masks
-    Visually hidden elements
+        Using ARIA-describedby
     Buttons vs links
+        When to use links
+        When to use buttons
+        Styling buttons and links
+        Image / icon buttons
     Skiplinks
+        Creating skiplinks in your application
     Focus, focus flow and focus control
+        What is keyboard focus
+        How to keep the keyboard focus visible
+        Making elements focusable with tabindex
+        Thinking about focus flow in your application and how to achieve it in HTML
+        Programmatically controlling focus
     Contrast
+        Calculate a conrast rich colour palette
     Clear page titles
+        Setting the HTML page title in your HTML
     Page language
+        Setting the page and element language attributes
     A11y linter plugins
+        eslint-plugin-jsx-a11y
     WAVE
-    aXe + react-axe
+    aXe
+        aXe
+        aXe-core
+        react-axe
     Colour contrast visualisers
+        Paciello group tool
+        Colour contrast analyser browser plugin
+        aXe
+        WAVE
     Visual disability simulators
+        No-Coffee
     Screen readers
+        NVDA
+        JAWS
+        VoiceOver (where to get a mac)
 
 Workshop
     Use techniques explained to create a small accessible application in the framework/tech of your choice
