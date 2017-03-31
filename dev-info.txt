@@ -4,19 +4,74 @@ A sneak peek at WCAG 2.1
 The developer's responsibility in Accessibility
 
 Semantic HTML
+    First rule of ARIA
+    Brief look at commonly used HTML elements and what they mean
+    <div>
+    <html>
+    <body>
+    <head>
+    <h1>-<h6>
+    <input>
+    <label>
+    <i>
+    <ul>
+    <ol>
+    <li>
+    <a>
+    <dl>
+    <dd>
+    <dt>
+    <p>
+    <span>
+    <pre>
+    <select>
+    <option>
+    <table>
+    <thead>
+    <tbody>
+    <tr>
+    <th>
+    <td>
+    <textarea>
+    <form>
+    <button>
+    <title>
+    <fieldset>
+    <legend>
+    <strong>
+    Semantic elements in HTML5
+        <article>
+        <aside>
+        <details>
+        <figcaption>
+        <figure>
+        <footer>
+        <header>
+        <main>
+        <mark>
+        <nav>
+        <section>
+        <summary>
+        <time>
 
 The extra challenges that comes from using a Javascript framework
+    Javascript rendering vs static/server generated HTML
+    Routing
+    Framework responses and delays (example live regions in React)
+    Component composition in a semantic website vs re-use: Balance of complexity
 
 Developer techniques + helper tooling
+    ARIA roles, states and properties + Rules of ARIA
     Responsive websites: Changing viewports and resizing the website
     Accessibility inspectors and the accessibility tree
     Accessible labelling
+    Accessible read-only pages
+    Accessible tables
     Accessible descriptive text such as errors and input masks
     Visually hidden elements
     Buttons vs links
     Skiplinks
     Focus, focus flow and focus control
-    ARIA roles, states and properties
     Contrast
     Clear page titles
     Page language
