@@ -1,0 +1,29 @@
+Overview of WCAG 2.0 (if not already covered by external trainer).
+A sneak peek at WCAG 2.1
+
+The developer's responsibility in Accessibility
+
+Semantic HTML
+
+The extra challenges that comes from using a Javascript framework
+    Angular
+    React
+
+Developer techniques + helper tooling
+    Accessibility inspectors and the accessibility tree
+    Accessible labelling
+    Visually hidden elements
+    Skiplinks
+    Focus and focus control
+    ARIA roles, states and properties
+    A11y linter plugins
+    WAVE
+    aXe
+    Screen readers
+
+Workshop
+
+Advanced developer techniques
+
+Workshop
+
