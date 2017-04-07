@@ -12,13 +12,13 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #afc18f;
-  background: -moz-linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #afc18f), color-stop(100%, #f7fbfc));
-  background: -webkit-linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
-  background: -o-linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
-  background: -ms-linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
-  background: linear-gradient(top, #afc18f 0%, #f7fbfc 100%);
+  background: #f7fbfc;
+  background: -moz-linear-gradient(top, #f7fbfc 0%, #f7fbfc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7fbfc), color-stop(100%, #f7fbfc));
+  background: -webkit-linear-gradient(top, #f7fbfc 0%, #f7fbfc 100%);
+  background: -o-linear-gradient(top, #f7fbfc 0%, #f7fbfc 100%);
+  background: -ms-linear-gradient(top, #f7fbfc 0%, #f7fbfc 100%);
+  background: linear-gradient(top, #f7fbfc 0%, #f7fbfc 100%);
   background-color: #f7fbfc; }
 
 .reveal {
@@ -334,6 +334,26 @@ body {
   font-size: 1.2em;
   font-weight: bold;
   letter-spacing: normal; }
+
+.reveal section.q-section-slide a {
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 #8DC63F, -0.05em 0 0 #8DC63F, 0 0.05em 0 #8DC63F, 0 -0.05em 0 #8DC63F, 0.1em 0 0 #8DC63F, -0.1em 0 0 #8DC63F, 0 0.1em 0 #8DC63F, 0 -0.1em 0 #8DC63F;
+  background-image: linear-gradient(to right, blue 0%, blue 100%);
+  background-repeat: repeat-x;
+  background-position: bottom 0.04em center;
+  background-size: 100% 0.07em; }
+  .reveal section.q-section-slide a:hover {
+    background-image: linear-gradient(to right, darkblue 0%, darkblue 100%); }
+
+.reveal section.q-info-slide a {
+  text-decoration: none;
+  text-shadow: 0.05em 0 0 #f7fbfc, -0.05em 0 0 #f7fbfc, 0 0.05em 0 #f7fbfc, 0 -0.05em 0 #f7fbfc, 0.1em 0 0 #f7fbfc, -0.1em 0 0 #f7fbfc, 0 0.1em 0 #f7fbfc, 0 -0.1em 0 #f7fbfc;
+  background-image: linear-gradient(to right, blue 0%, blue 100%);
+  background-repeat: repeat-x;
+  background-position: bottom 0.04em center;
+  background-size: 100% 0.07em; }
+  .reveal section.q-info-slide a:hover {
+    background-image: linear-gradient(to right, darkblue 0%, darkblue 100%); }
 
 .reveal section a {
   color: blue; }

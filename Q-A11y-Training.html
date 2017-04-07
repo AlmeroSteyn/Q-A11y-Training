@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>QDELFT: Building accessible web applications</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/qdelft.css">
@@ -27,7 +27,7 @@
         <!--Main slide example-->
         <section class="q-main-slide" data-background-color="#363F44">
             <img class="q-image q-main-logo q-main-logo-pad" src="./images/QLogoInverted.png"/>
-            <h2>Inclusive Design</h2>
+            <h2>Accessibility for Developers</h2>
             <hr/>
             <p>
                 <span>Building accessible web applications</span>
@@ -52,14 +52,22 @@
         </section>
         <!--Section slide example-->
         <section class="q-section-slide" data-background-color="#8DC63F">
-            <h2>Some title</h2>
-        </section>
-        <!--Normal slide example-->
-        <section class="q-info-slide"  data-background-image="./images/QLogoQOnlyPadded.png" data-background-size="100px"
-                 data-background-position="bottom left">
-             <p>Some normal slide</p>
+            <h2>Training Sections</h2>
+            <ul>
+                <li><a href="Q-A11y-Training-The-WCAG.html">Understanding the WCAG</a></li>
+                <li><a href="Q-A11y-Training-Semantic-Html.html">Semantic HTML</a></li>
+            </ul>
         </section>
         <!--End slide example-->
+        <!--Normal slide example-->
+        <section class="q-info-slide" data-background-image="./images/QLogoQOnlyPadded.png" data-background-size="100px"
+                 data-background-position="bottom left">
+            <p>Some normal slide</p>
+            <ul>
+                <li><a href="Q-A11y-Training-The-WCAG.html">Understanding the WCAG</a></li>
+                <li><a href="Q-A11y-Training-Semantic-Html.html">Semantic HTML</a></li>
+            </ul>
+        </section>
         <section class="q-main-slide " data-background-color="#363F44">
             <h2>Questions?</h2>
             <img class="q-image q-sub-logo" src="./images/QLogoQOnly.png"/>
@@ -69,14 +77,15 @@
                     <li>Mijnbouwplein 33</li>
                     <li>2628 RT Delft</li>
                     <li>+31 15 30 30 130</li>
-                    <li><a href="www.qdelft.nl">www.qdelft.nl</a></li>
+                    <li>www.qdelft.nl</li>
                 </ul>
             </div>
             <div class="q-box q-col-50 q-col-50-right">
                 <ul class="q-address">
                     <li>Almero Steyn</li>
                     <li>Twitter: @KryptosRSA</li>
-                    <li><a href="mailto:almero.steyn@qdelft.nl">almero.steyn@qdelft.nl</a></li>
+                    <li>almero.steyn@qdelft.nl</li>
+                    <li>almerosteyn.com</li>
                 </ul>
             </div>
         </section>
@@ -94,9 +103,9 @@
 
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [
-            {src: 'plugin/markdown/marked.js'},
-            {src: 'plugin/markdown/markdown.js'},
-            {src: 'plugin/notes/notes.js', async: true},
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
             {
                 src: 'plugin/highlight/highlight.js', async: true, callback: function () {
                 hljs.initHighlightingOnLoad();

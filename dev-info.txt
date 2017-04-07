@@ -55,12 +55,6 @@ Semantic HTML
             <summary>
             <time>
 
-The extra challenges that comes from using a Javascript framework
-    Javascript rendering vs static/server generated HTML
-    Routing
-    Framework responses and delays (example live regions in React)
-    Component composition in a semantic website vs re-use: Balance of complexity
-
 Developer techniques + helper tooling
     (All techniques will be explained starting from HTML and working back to achieving it in a JavascriptFramework like React)
     ARIA roles, states and properties + Rules of ARIA
@@ -129,6 +123,12 @@ Developer techniques + helper tooling
         NVDA
         JAWS
         VoiceOver (where to get a mac?)
+
+The extra challenges that comes from using a Javascript framework
+    Javascript rendering vs static/server generated HTML
+    Routing
+    Framework responses and delays (example live regions in React)
+    Component composition in a semantic website vs re-use: Balance of complexity
 
 Workshop
     Use techniques explained to create a small accessible application in the framework/tech of your choice
