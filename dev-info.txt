@@ -5,7 +5,7 @@ The developer's responsibility in Accessibility
 
 Semantic HTML
     First rule of ARIA
-    Brief look at commonly used HTML elements and what they mean
+    Brief look at commonly used HTML elements and what they mean - section complete
         <div>
         <html>
         <body>
