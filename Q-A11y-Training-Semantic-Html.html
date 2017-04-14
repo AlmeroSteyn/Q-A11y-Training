@@ -276,17 +276,26 @@
             </section>
         </section>
         <section class="q-section-slide" data-background-color="#8DC63F">
-            <h2>Semantic HTML elements</h2>
+            <h2>Extra semantic elements</h2>
         </section>
         <section>
             <section class="q-info-slide" data-background-image="./images/QLogoQOnlyPadded.png"
                      data-background-size="100px"
                      data-background-position="bottom left">
-                <h2>&lt;i&gt;, &lt;b&gt;, &lt;strong&gt;</h2>
+                <h2>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;aside&gt;</h2>
                 <pre><code class="html">
-&lt;i class="fa fa-camera-retro"&gt;&lt;/i&gt;
-&lt;b&gt;Some bold text&lt;/b&gt;
-&lt;strong&gt;Some emphasised text&lt;/strong&gt;
+&lt;header role="banner"&gt;
+Site header goes here
+&lt;/header&gt;
+&lt;main id="content" role="main"&gt;
+Main site content
+&lt;/main&gt;
+&lt;aside id="content" role="complementary"&gt;
+Complementary info or side navigation
+&lt;/aside&gt;
+&lt;footer role="contentinfo"&gt;
+Site footer goes here
+&lt;/footer&gt;
                 </code></pre>
             </section>
         </section>
