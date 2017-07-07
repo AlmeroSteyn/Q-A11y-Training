@@ -9,7 +9,7 @@ export const A11yRoute = ({ component, alertText, ...rest }) =>
             return (
                 <DocumentTitle title={alertText}>
                     <div>
-                        <div className="sr-only" role="alert">{alertText}</div>
+                        <div className="sr-only" aria-live="assertive" aria-atomic="true" aria-relevant="additions">{alertText}</div>
                         {React.createElement(component, props)}
                     </div>
                 </DocumentTitle>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import DocumentTitle from'react-document-title';
+import DocumentTitle from 'react-document-title';
 
 class A11yMessage extends Component {
     constructor(props) {
@@ -12,30 +12,29 @@ class A11yMessage extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        if(!this.props.location.state){
-            return;
-        }
-        const oldLocation = this.props.location;
         const { location } = nextProps;
-        if (oldLocation.state.a11yMessage !== location.state.a11yMessage) {
-            setTimeout(() => {
+        if (location.state.a11yMessage) {
+            this.setState({ currentA11yMessage: '' }, () => {
                 this.setState({
                     currentA11yMessage: location.state.a11yMessage
                 });
-            }, 200);
-            // setTimeout(() => {
-            //     this.setState({
-            //         currentA11yMessage: ''
-            //     });
-            // }, 500);
+            });
         }
     }
 
     render() {
         const { currentA11yMessage } = this.state;
         return (
-
-            <DocumentTitle title={currentA11yMessage}/>
+            <DocumentTitle title={currentA11yMessage}>
+                <div
+                    className="sr-only"
+                    role="log"
+                    aria-live="polite"
+                    aria-relevant="additions"
+                    aria-atomic="true">
+                    {currentA11yMessage ? currentA11yMessage : ''}
+                </div>
+            </DocumentTitle>
         );
     }
 }

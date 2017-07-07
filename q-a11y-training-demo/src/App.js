@@ -5,6 +5,8 @@ import A11yRoute from './components/common/A11yRoute';
 import PersonalDetails from './components/person/details/PersonalDetails';
 import Achievements from './components/person/achievements/Achievements';
 import Home from './components/home/Home';
+import A11yMessage from './components/common/A11yMessage';
+import A11yAnnouncer from './components/common/A11yAnnouncer';
 
 class App extends Component {
     render() {
@@ -13,10 +15,11 @@ class App extends Component {
 
                 <Router history={createBrowserHistory()}>
                     <div>
+                        <A11yAnnouncer />
                         <Link
                             to={{
                                 pathname: '/',
-                                state: { a11yMessage: 'Home' }
+                                state: { a11yMessage: 'Navigated to home' }
                             }}>
                             Home
                         </Link>
@@ -24,7 +27,7 @@ class App extends Component {
                             to={{
                                 pathname: '/person/details',
                                 state: {
-                                    a11yMessage: 'Persoonsgegevens'
+                                    a11yMessage: 'Navigated to persoonsgegevens'
                                 }
                             }}>
                             Personal details
@@ -33,7 +36,7 @@ class App extends Component {
                             to={{
                                 pathname: '/person/achievements',
                                 state: {
-                                    a11yMessage: 'Verdiensten'
+                                    a11yMessage: 'Navigatred to verdiensten'
                                 }
                             }}>
                             Achievements
