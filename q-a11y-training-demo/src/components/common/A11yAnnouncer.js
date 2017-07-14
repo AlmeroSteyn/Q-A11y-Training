@@ -1,65 +1,52 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import PoliteMessage from '../react-aria-live/PoliteMessage';
 
 class A11yAnnouncer extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            currentA11yMessage1: '',
-            currentA11yMessage2: ''
-        };
+    this.state = {
+      currentPoliteMessage1: '',
+      currentPoliteMessage2: '',
+    };
 
+    this.setAlternate = false;
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const { message } = nextProps;
+    if (message !== this.props.message) {
+      if (this.setAlternate) {
         this.setAlternate = false;
+        this.setState({ currentPoliteMessage1: '' }, () => {
+          this.setState({
+            currentPoliteMessage2: message,
+          });
+        });
+      } else {
+        this.setAlternate = true;
+        this.setState({ currentPoliteMessage2: '' }, () => {
+          this.setState({
+            currentPoliteMessage1: message,
+          });
+        });
+      }
     }
+  }
 
-    componentWillReceiveProps(nextProps) {
-        const { location } = nextProps;
-        if (location.state.a11yMessage) {
-            if (this.setAlternate) {
-                this.setAlternate=false;
-                this.setState({ currentA11yMessage1: '' }, () => {
-                    this.setState({
-                        currentA11yMessage2: location.state.a11yMessage
-                    });
-
-                });
-
-            } else {
-                this.setAlternate=true;
-                this.setState({ currentA11yMessage2: '' }, () => {
-                    this.setState({
-                        currentA11yMessage1: location.state.a11yMessage
-                    });
-                });
-
-            }
-        }
-    }
-
-    render() {
-        const { currentA11yMessage1, currentA11yMessage2 } = this.state;
-        return (
-            <div>
-                <div
-                    className="sr-only"
-                    role="log"
-                    aria-live="polite"
-                    aria-relevant="additions"
-                    aria-atomic="true">
-                    {currentA11yMessage1 ? currentA11yMessage1 : ''}
-                </div>
-                <div
-                    className="sr-only"
-                    role="log"
-                    aria-live="polite"
-                    aria-relevant="additions"
-                    aria-atomic="true">
-                    {currentA11yMessage2 ? currentA11yMessage2 : ''}
-                </div>
-            </div>
-        );
-    }
+  render() {
+    const { currentPoliteMessage1, currentPoliteMessage2 } = this.state;
+    return (
+      <div>
+        <PoliteMessage
+          message={currentPoliteMessage1 ? currentPoliteMessage1 : ''}
+        />
+        <PoliteMessage
+          message={currentPoliteMessage2 ? currentPoliteMessage2 : ''}
+        />
+      </div>
+    );
+  }
 }
 
-export default withRouter(A11yAnnouncer);
+export default A11yAnnouncer;
